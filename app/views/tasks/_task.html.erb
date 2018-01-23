@@ -1,4 +1,4 @@
-<div class="task <%= task.completed? ? "completed" : nil %>">
+<div class="task <%= task.completed? ? "completed" : true %>">
   <span class="task-description"><%= task.description %></span>
   <span class="task-due">
     (<%= distance_of_time_in_words(Time.now, task.due_date) %>)
